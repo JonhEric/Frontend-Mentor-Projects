@@ -1,0 +1,178 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;    
+    font-family: 'Open sans', sans-serif;
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header{
+    width: 90%;
+    margin: 0 auto;
+    padding: 6.5rem 0;
+}
+
+.logo{
+    width: 20rem;
+}
+
+main{
+    width: 90%;
+    /* margin: 4rem auto 0;     */
+    margin: 0 auto;    
+    display: flex;
+    justify-content: center;
+}
+
+.img-content{
+    width: 60%;
+}
+
+.illustration{
+    max-width: 100%; 
+    height: auto;
+    object-fit: contain;    
+}
+
+.text-content{
+    width: 40%;
+    margin-left: 4rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;    
+    color: #fff;    
+}
+
+.text-content h1{
+    margin-bottom: 3.5rem;
+    font-size: 3.9rem;
+    font-weight: 600;    
+}
+
+.text-content p{
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.text-content button{
+    display: inline;
+    width: 18rem;
+    height: 5rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    color:hsl(257, 40%, 49%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.text-content button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.social{
+    width: 90%;
+    margin: 0 auto;
+    height: 10rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.social svg{
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.social svg:nth-child(2){    
+    margin: 0 1rem;    
+}
+
+.social svg path:hover, svg:hover {
+    fill: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width: 1150px) {
+    body{
+        background-image: url(images/bg-mobile.svg);
+    }
+    header{
+        width: 80%;
+        padding: 6rem 0;
+    }
+    .logo{
+        width: 25rem;
+    }
+    main{       
+        width: 80%;
+        margin-top: 5.3rem;        
+        flex-direction: column;
+    }
+    .img-content{
+        width: 100%;
+    }
+    .text-content{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 12rem;
+        text-align: center;
+        align-items: center;    
+        color: #fff;    
+    }
+    .text-content h1{
+        margin-bottom: 0;
+        font-size: 5rem;
+        font-weight: 600;    
+    }
+    .text-content p{
+        margin: 4rem 0;
+        font-size: 3.4rem;
+        font-weight: 400;
+    }
+    .text-content button{
+        width: 60%;        
+        height: 8rem;        
+        font-size: 2.5rem;        
+        border-radius: 4rem;        
+    }
+    .social{
+        width: 80%;
+        margin: 10rem auto 5rem;        
+        justify-content: center;     
+    }
+    .social svg{
+        width: 6rem;
+        height: 6rem;
+        padding: 1rem;        
+    }
+    .social svg:nth-child(2){    
+        margin: 0 2rem;    
+    }
+
+}
