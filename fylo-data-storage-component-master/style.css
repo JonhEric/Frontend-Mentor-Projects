@@ -1,0 +1,141 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 62.5%;
+}
+
+:root {
+  --white: #fff;
+  --black: #000;
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+body {
+  @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Very-Dark-Blue);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 350px 540px;
+    grid-row: 200px;
+    gap: 3rem;
+    background-image: url(images/bg-desktop.png);
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 4rem;
+    border-radius: 1rem 10rem 1rem 1rem;
+    background-color: var(--Dark-Blue);
+    
+}
+.logo{
+    margin-bottom: 3rem;
+}
+.icon{    
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon img{    
+    margin-right: 1.5rem;
+    padding: 1.3rem;
+    border-radius: 1rem;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.state-container{
+    align-self: end;
+    height: 15.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: var(--Dark-Blue);
+    color:var(--Pale-Blue);
+    position: relative;
+}
+.state-container span{
+    font-weight: 700;
+}
+.state-container p{
+    letter-spacing: .1rem;
+}
+
+.storage-bar{
+    width: 100%;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #151e49;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.storage{
+    width: 81%;
+    height: 1.2rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    translate: .2rem;
+    position: relative;
+}
+
+.storage::after{
+    position: absolute;
+    top: .1rem;
+    right: .1rem;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--Pale-Blue);}
+
+.storage-rest{
+    position: absolute;
+    top: -5rem;
+    right: 4rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color:var(--Very-Dark-Blue);
+    background-color: var(--Pale-Blue);
+}
+.storage-rest span{
+    font-size: 1.4rem;
+    color: var(--Grayish-Blue);
+    text-transform: uppercase;
+}
+
+.storage-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
