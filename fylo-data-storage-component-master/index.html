@@ -34,15 +34,18 @@
     <main>
       <div class="icon-container">
         <img src="images/logo.svg" alt="logo" class="logo"/>
-        <div class="icon">
-          <img src="images/icon-document.svg" alt="document" />
-          <img src="images/icon-folder.svg" alt="folder" />
-          <img src="images/icon-upload.svg" alt="upload" />
+        <div class="icons">
+          <div class="icon"><img src="images/icon-document.svg" alt="document"/></div>
+          <div class="icon"><img src="images/icon-folder.svg" alt="folder" /></div>
+          <div class="icon"><img src="images/icon-upload.svg" alt="upload" /></div>
         </div>
       </div>
       <div class="state-container">
         <p>You’ve used <span>815 GB</span> of your storage</p>
-        <p class="storage-rest">185 <span>GB Left</span></p>
+        <div class="storage-rest">
+          <p>185 <span>GB Left</span></p>
+          <div class="triangle"></div>
+        </div>
         <div class="storage-bar">
           <div class="storage"></div>
         </div>
