@@ -27,9 +27,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--Very-Dark-Blue);
   width: 100vw;
   min-height: 100vh;
+  background-color: var(--Very-Dark-Blue);
   background-image: url(images/bg-desktop.png);
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -88,7 +88,7 @@ main {
     transform: scale(0);
     opacity: 0;
   }
- 
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -168,7 +168,7 @@ main {
   opacity: 0;
   transform-origin: bottom right;
   animation: appear 0.3s ease-in-out forwards;
-  animation-delay: .7s;
+  animation-delay: 0.7s;
 }
 
 .storage-rest span {
@@ -192,4 +192,40 @@ main {
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1020px) {
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-size: cover;
+    display: grid;
+    place-content: center;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icon-container{
+    width: 100%;
+  }
+  .state-container{
+    height: 18rem;
+    padding-bottom: 7rem;
+  }
+  .storage-rest{
+    top: 75%;
+    right: 25%;
+    
+    padding: 2rem;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .triangle{
+    display: none;
+  }
 }
