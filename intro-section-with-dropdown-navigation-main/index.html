@@ -20,10 +20,33 @@
 
   <nav>
     <img src="images/logo.svg" alt="logo snap" class="logo">
-    <menu>
+    <menu class="close">
       <ul>
-        <li><a href="">Features <img src="images/icon-arrow-down.svg" alt=""></a></li>
-        <li><a href="">Company <img src="images/icon-arrow-down.svg" alt=""></a></li>
+        <li>
+          <a href="#" class="features-menu">
+            <span>Features</span> 
+            <img src="images/icon-arrow-down.svg" class="arrow1">
+                      <!-- <img src="images/icon-arrow-up.svg" alt=""> -->
+          </a>
+          <ul class="submenu sub-features close">
+            <li><a href="#"><img src="images/icon-todo.svg" alt="icon-todo"> <span>Todo List</span></a></li>
+            <li><a href="#"><img src="images/icon-calendar.svg" alt="icon-calendar"> <span>Calendar</span></a></li>
+            <li><a href="#"><img src="images/icon-reminders.svg" alt="icon-reminders"> <span>Reminder</span></a></li>
+            <li><a href="#"><img src="images/icon-planning.svg" alt="icon-planning"> <span>Planning</span></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="company-menu">
+            <span>Company</span>
+             <img src="images/icon-arrow-down.svg" class="arrow2">
+                    <!-- <img src="images/icon-arrow-up.svg" alt=""> -->
+          </a>
+          <ul class="submenu sub-company close">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
         <li><a href="">Careers</a></li>
         <li><a href="">About</a></li>
       </ul>
@@ -64,5 +87,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script src="app.js"></script>
 </body>
 </html>

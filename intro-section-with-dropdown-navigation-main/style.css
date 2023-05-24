@@ -49,11 +49,63 @@ nav ul{
     display: flex;
     list-style: none;
     font-style: 18px;
+    position: relative;
 }
 
 nav ul li{
   margin-right: 2rem;  
 }
+
+/* ================================================================== */ 
+
+ul.submenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    /* position */
+    top: 40px;
+    left: -80px;
+    background: #FFFFFF;
+    /* drop-down */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1), -4px -4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    /* animation */
+    transition: all 0.8s ease-in-out;
+}
+ul.submenu li{
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+ul.submenu li:nth-child(4){
+    margin-bottom: 0;
+}
+
+ul.submenu li a{
+    display: block;
+    width: 100%;
+    display: flex;
+}
+ul.submenu img{
+    margin-right: 15px;
+}
+
+.submenu.sub-company{
+    left: 65px;
+    align-items: start;
+}
+.submenu.sub-company li:nth-child(3){
+    margin-bottom: 0;
+}
+
+ul.close{
+    display: none;
+    background-color: red;
+}
+/* ================================================================== */ 
+
 
 .hamburger{
     width: 30px;
@@ -170,9 +222,14 @@ nav ul li{
         width: 80%;
         margin-bottom: 0;
     }
-    menu{
+    menu.close{
         display: none;
     }
+    menu{
+        display: flex;
+        flex-direction: column;
+    }
+
     .hamburger{
         display: flex;
         margin-left: auto;
