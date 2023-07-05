@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    width: 100wh;
+    height: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 86%);
+color: hsl(259, 100%, 65%);
+color: hsl(0, 100%, 67%);
+color: hsl(0, 0%, 100%);
+color: hsl(0, 0%, 94%);
+color: hsl(0, 0%, 86%);
+color: hsl(0, 1%, 44%);
+color: hsl(0, 0%, 8%);
+}
+
+.container{
+    width: 840px;
+    height: 650px;
+
+    display: flex;
+    flex-direction: column;
+    
+    padding: 55px;
+    border-radius: 20px 20px 200px 20px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.form{
+    width: 100%;
+}
+
+.inputDate{
+    /* width: 75%; */
+    display: flex;
+    justify-content: start;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.data label{
+        font-size: 16px;
+        font-weight: 600;
+        color: hsl(0, 1%, 44%);
+        text-transform: uppercase;
+}
+
+.data input{
+    width: 160px;
+    height: 70px;
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(0, 1%, 44%);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: 1px solid hsl(0, 1%, 44%);
+    border: none;
+}
+
+.data input:focus{
+    color: hsl(0, 0%, 8%);
+    outline: 1px solid hsl(259, 100%, 65%);
+}
+
+.required {
+    margin-top: 10px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+.required {
+    margin-top: 10px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+.required {
+    margin-top: 10px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+.hr {
+    margin-top: 45px;
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    padding: 25px;
+}
+
+.btn:hover{
+    background-color: hsl(0, 0%, 8%);
+}
+
+.result{
+    margin-top: auto;
+}
+.result p{
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+    margin-top: -32px;
+}
+
+.result span{
+    color: hsl(259, 100%, 65%);
+}
+
+.invalid {
+    margin-top: 10px;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+.none {
+    display: none;
+}
