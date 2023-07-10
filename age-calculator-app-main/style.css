@@ -6,38 +6,31 @@
 body {
     font-family: "Poppins", sans-serif;
     width: 100wh;
-    height: 960px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 86%);
-color: hsl(259, 100%, 65%);
+}
+/* color: hsl(259, 100%, 65%);
 color: #ff5757;
 color: hsl(0, 0%, 100%);
 color: hsl(0, 0%, 94%);
 color: hsl(0, 0%, 86%);
 color: hsl(0, 1%, 44%);
-color: hsl(0, 0%, 8%);
-}
+color: hsl(0, 0%, 8%); */
 
 .container{
-    width: 840px;
-    height: 650px;
-
+    min-width: 840px;
+    min-height: 650px;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
     padding: 55px;
     border-radius: 20px 20px 200px 20px;
     background-color: hsl(0, 0%, 100%);
 }
 
 .form{
-    max-width: 90%;
-}
-
-.inputDate{
-    /* width: 75%; */
     display: flex;
     justify-content: start;
 }
@@ -57,12 +50,13 @@ color: hsl(0, 0%, 8%);
 
 .data input{
     max-width: 160px;
+   
     height: 70px;
     font-size: 32px;
     font-weight: 700;
     color: hsl(0, 1%, 44%);
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 5px;
     outline: 1px solid hsl(0, 1%, 44%);
     border: none;
@@ -79,7 +73,7 @@ color: hsl(0, 0%, 8%);
     color: hsl(0, 100%, 67%);
 }
 
-.hr{
+.submit{
     width: 100%;
     height: 100px;
     position: relative;
@@ -99,9 +93,10 @@ color: hsl(0, 0%, 8%);
     right: 0;
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    background-color: hsl(259, 100%, 65%);
     padding: 25px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(259, 100%, 65%);
 }
 
 .btn:hover{
@@ -133,14 +128,41 @@ color: hsl(0, 0%, 8%);
     display: none;
 }
 
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 900px) {
     .container{
         width: 90%;
+        min-width: 375px;
+        min-height: auto;
+        padding: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    .form{
+        justify-content: space-evenly;
+    }
+    .data{
+        margin-right: 0;
+    }
+    .dataMonth{
+        margin: 0 25px;
+    }
+    input{
+        width: 100%;
+    }
+    input::placeholder{
+        font-size: 21px;
+        line-height: 70px;
     }
     .btn{
-        right: 50%;
+        right: calc(50% - 50px);
     }
-    .hr{
-        /* margin: 0 100px; */
+    .submit{
+        margin: 25px auto;
+    }
+    .result{
+        margin: 25px auto;
+    }
+    .result p{
+        font-size: calc(70px + (100 - 70) * ((100vw - 500px) / (1440 - 500)));
     }
 }

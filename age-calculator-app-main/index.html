@@ -30,14 +30,12 @@
   <body>
     <div class="container">
       <form action="" class="form">
-
-        <div class="inputDate">
           <div class="data">
             <label for="day">Day</label>
             <input type="number" name="day" placeholder="DD" class="day"/>
             <p class="invalid date"></p>
           </div>
-          <div class="data">
+          <div class="data dataMonth">
             <label for="month">Month</label>
             <input type="number" name="month" placeholder="MM" class="month"/>
             <p class="invalid month"></p>
@@ -47,17 +45,13 @@
             <input type="number" name="year" placeholder="YYYY" class="year"/>
             <p class="invalid year"></p>
           </div>
-        </div>
-
-        
-        <div class="hr">
-          <div class="line"></div>
-          <button type="submit" class="btn"/>
-          <img src="assets/images/icon-arrow.svg" alt="">
-          </button>
-        </div>
-        
       </form>
+      <div class="submit">
+        <div class="line"></div>
+        <button type="submit" class="btn"/>
+        <img src="assets/images/icon-arrow.svg" alt="">
+        </button>
+      </div>
 
       <div class="result">
         <p><span class="resultYears">--</span>years</p>
