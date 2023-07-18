@@ -1,0 +1,5 @@
+header
+div*6
+div tesa
+div galeries
+footer
